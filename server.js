@@ -105,7 +105,7 @@ var MyRed = function () {
         //setup basic authentication
         var basicAuth = require('basic-auth-connect');
         self.app.use(basicAuth(function (user, pass) {
-            return user === 'test' && pass === atob('dGVzdA==');
+            return user === 'admin' && pass === atob('cXdlcnR6dWlvcA==');
         }));
 
         // Initialise the runtime with a server and settings
