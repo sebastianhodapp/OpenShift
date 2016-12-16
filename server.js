@@ -5,6 +5,16 @@ var express = require("express");
 var RED = require("node-red");
 var atob = require('atob');
 
+//Get the environment variables we need.
+var ipaddr = process.env.OPENSHIFT_INTERNAL_IP || "127.0.0.1";
+var port = process.env.OPENSHIFT_INTERNAL_PORT || 8080;
+
+console.warn("IP-Adresse: ");
+console.warn(ipaddr);
+
+console.warn("env: ");
+console.warn(env);
+
 var MyRed = function () {
 
     //  Scope.
