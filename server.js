@@ -13,7 +13,7 @@ console.warn("IP-Adresse: ");
 console.warn(ipaddr);
 
 console.warn("env: ");
-console.warn(env);
+console.warn(process.env);
 
 var MyRed = function () {
 
