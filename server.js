@@ -7,7 +7,7 @@ var atob = require('atob');
 
 //Get the environment variables we need.
 var ipaddr = process.env.OPENSHIFT_INTERNAL_IP || "127.0.0.1";
-var port = process.env.OPENSHIFT_INTERNAL_PORT || 8080;
+//var port = process.env.OPENSHIFT_INTERNAL_PORT || 8080;
 
 console.warn("IP-Adresse: ");
 console.warn(ipaddr);
