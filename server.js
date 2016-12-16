@@ -1,4 +1,4 @@
-console.warn("+ server.js will be executed");
+console.warn("+ server.js will be executed.");
 
 var http = require('http');
 var express = require("express");
