@@ -6,7 +6,7 @@ var RED = require("node-red");
 var atob = require('atob');
 
 //Get the environment variables we need.
-var ipaddr = process.env.OPENSHIFT_INTERNAL_IP || "127.0.0.1";
+var ipaddr = process.env.NODE_RED_SERVICE_HOST || "127.0.0.1";
 //var port = process.env.OPENSHIFT_INTERNAL_PORT || 8080;
 
 console.warn("IP-Adresse: ");
@@ -30,7 +30,7 @@ var MyRed = function () {
      */
     self.setupVariables = function () {
         //  Set the environment variables we need.
-        self.ipaddress = process.env.OPENSHIFT_NODEJS_IP;
+        self.ipaddress = process.env.NODE_RED_SERVICE_HOST;
         self.port = process.env.OPENSHIFT_NODEJS_PORT || 8000;
 
         if (typeof self.ipaddress === "undefined") {
